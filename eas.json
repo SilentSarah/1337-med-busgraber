@@ -1,0 +1,30 @@
+{
+  "cli": {
+    "version": ">= 14.0.0",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "cache": {
+        "disabled": false
+      }
+    },
+    "preview": {
+      "distribution": "internal",
+      "cache": {
+        "disabled": false
+      }
+    },
+    "production": {
+      "autoIncrement": true,
+      "cache": {  
+        "disabled": false
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}
